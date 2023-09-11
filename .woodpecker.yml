@@ -1,0 +1,10 @@
+pipeline:
+  build:
+    image: plugins/docker
+    settings:
+      registry: gitrepo.ru
+      username: neonxp
+      password: 
+        from_secret: gitea_token
+      repo: gitrepo.ru/neonxp/iinode
+      tags: latest
